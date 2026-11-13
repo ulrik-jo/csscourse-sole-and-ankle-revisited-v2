@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {COLORS, QUERIES, WEIGHTS} from '../../constants';
+import {QUERIES, WEIGHTS} from '../../constants';
 
 import Breadcrumbs from '../Breadcrumbs';
 import Select from '../Select';

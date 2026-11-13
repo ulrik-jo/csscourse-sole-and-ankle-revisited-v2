@@ -29,3 +29,5 @@ export const QUERIES = {
   'laptopAndSmaller': `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
   'laptopAndUp': `(min-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
 }
+
+
