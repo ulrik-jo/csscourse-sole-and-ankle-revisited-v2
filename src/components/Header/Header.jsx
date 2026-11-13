@@ -30,7 +30,7 @@ const Header = () => {
           <Icons>
               <UnstyledButton> <Icon id={'shopping-bag'} /> </UnstyledButton>
               <UnstyledButton> <Icon id={'search'} /> </UnstyledButton>
-              <UnstyledButton> <Icon id={'menu'} /> </UnstyledButton>
+              <UnstyledButton> <Icon id={'menu'} onClick={() => setShowMobileMenu(true)} /> </UnstyledButton>
           </Icons>
         </Side>
       </MainHeader>
@@ -47,8 +47,8 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+    overflow: auto;
 
     @media ${QUERIES.tabletAndSmaller} {
         border-top: 4px solid ${COLORS.gray[900]};
@@ -62,7 +62,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 14vw - 7.25rem, 3rem);
   margin: 0 48px;
     
     @media ${QUERIES.tabletAndSmaller} {
